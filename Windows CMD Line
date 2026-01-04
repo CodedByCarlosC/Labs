@@ -20,6 +20,8 @@ Access Method: SSH via AttackBox
 Tools Used:
 Windows Command Prompt (cmd.exe), OpenSSH, Built-in Windows networking and system utilities
 
+![image alt](https://github.com/CodedByCarlosC/Labs/blob/5593351ccda0e37b99a48c6d59e3d955823fbca5/systeminfo.PNG)
+
 🖥️ System Information & Environment Inspection
 I used the command line to gather detailed system context, including:
 OS version and build information
@@ -30,18 +32,23 @@ These commands are essential for initial system triage during investigations or 
 
 
 🌐 Network Configuration & Troubleshooting
-
 I inspected and troubleshot network connectivity directly from the CLI using: ipconfig and ipconfig /all to view IP, DNS, DHCP, and gateway details
 ping to test reachability and latency
 tracert to trace packet paths across networks
 nslookup to resolve domains and test DNS servers
 netstat to inspect active connections and listening ports
 
+![image alt](https://github.com/CodedByCarlosC/Labs/blob/5593351ccda0e37b99a48c6d59e3d955823fbca5/tracert.PNG)
+![image alt](https://github.com/CodedByCarlosC/Labs/blob/5593351ccda0e37b99a48c6d59e3d955823fbca5/nslookup.PNG)
+![image alt](https://github.com/CodedByCarlosC/Labs/blob/5593351ccda0e37b99a48c6d59e3d955823fbca5/ping.PNG)
+
 Advanced netstat usage included:
 Identifying services bound to ports
 Mapping connections to process IDs (PIDs)
 Understanding how services like SSH expose themselves on the system
 These skills are directly applicable to network troubleshooting, threat hunting, and incident response.
+
+![image alt](https://github.com/CodedByCarlosC/Labs/blob/5593351ccda0e37b99a48c6d59e3d955823fbca5/nstat-abon.PNG)
 
 📂 File System Navigation & Management
 I practiced navigating and manipulating the Windows file system without a GUI, including:
@@ -53,6 +60,10 @@ Copying, moving, and deleting files (copy, move, del, erase)
 Using wildcards (*) for bulk file operations
 This reinforced how attackers and administrators alike interact with systems at a low level.
 
+![image alt](https://github.com/CodedByCarlosC/Labs/blob/5593351ccda0e37b99a48c6d59e3d955823fbca5/cd.PNG)
+![image alt](https://github.com/CodedByCarlosC/Labs/blob/5593351ccda0e37b99a48c6d59e3d955823fbca5/mkdir.PNG)
+![image alt](https://github.com/CodedByCarlosC/Labs/blob/5593351ccda0e37b99a48c6d59e3d955823fbca5/ipconfig%20all.PNG)
+
 ⚙️ Process Enumeration & Control
 I explored how to monitor and manage running processes from the CLI:
 Listing processes with tasklist
@@ -60,6 +71,8 @@ Filtering processes by name
 Identifying process IDs (PIDs)
 Terminating processes using taskkill
 Understanding process behavior is critical for identifying malicious activity, stuck services, or suspicious executables.
+
+![image alt](https://github.com/CodedByCarlosC/Labs/blob/5593351ccda0e37b99a48c6d59e3d955823fbca5/tasklist.PNG)
 
 🛠️ Additional System Commands
 While not used extensively in this lab, I reviewed additional commands commonly used in system maintenance and security contexts:
